@@ -2,17 +2,15 @@
 Space-Time Pattern Analysis
 ======================================================================
 
-Single Soliton:
+(a):
   Space-Time Characteristics:
     Max intensity: 4.000
     Mean intensity: 0.080
     Energy center drift: 20.000
     Propagation velocity: 1.000
     Correlation length: 1.367
-    Soliton velocity: 1.000
-    Velocity R²: 1.000
 
-Two-Soliton Collision:
+(b):
   Space-Time Characteristics:
     Max intensity: 10.015
     Mean intensity: 0.140
@@ -20,7 +18,7 @@ Two-Soliton Collision:
     Propagation velocity: -0.071
     Correlation length: 1.562
 
-Akhmediev Breather:
+(c):
   Space-Time Characteristics:
     Max intensity: 14.168
     Mean intensity: 0.147
@@ -28,7 +26,7 @@ Akhmediev Breather:
     Propagation velocity: 0.483
     Correlation length: 3.516
 
-Modulation Instability:
+(d):
   Space-Time Characteristics:
     Max intensity: 8.592
     Mean intensity: 0.178
