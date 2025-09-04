@@ -138,9 +138,9 @@ def create_spacetime_plot(ax, data, scenario_name, vmin, vmax, energy_center=Non
     if energy_center is not None:
         ax.plot(t, energy_center, 'w--', alpha=0.5, linewidth=1.5)
     
-    ax.set_xlabel('Time $t$', fontsize=16)
-    ax.set_ylabel('Position $x$', fontsize=16)
-    ax.set_title(scenario_name, fontsize=18)
+    ax.set_xlabel('Time $t$', fontsize=16, fontweight='bold')
+    ax.set_ylabel('Position $x$', fontsize=16, fontweight='bold')
+    ax.set_title(scenario_name, fontsize=18, fontweight='bold')
     
     return im
 
@@ -261,7 +261,7 @@ def main():
     fig.subplots_adjust(right=0.88)
     cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
     cbar = fig.colorbar(images[0], cax=cbar_ax)
-    cbar.set_label('$|\\psi|^2$', fontsize=14)
+    cbar.set_label('$|\\psi|^2$', fontsize=14, fontweight='bold')
     cbar.ax.tick_params(labelsize=11)
     
     # Adjust layout
