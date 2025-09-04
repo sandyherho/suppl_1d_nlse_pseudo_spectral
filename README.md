@@ -1,6 +1,6 @@
 # Supplementary Materials: High-Order Pseudo-Spectral Solver for 1D NLSE
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1050333859.svg)](https://doi.org/10.5281/zenodo.17053394)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
 Comprehensive data analysis and visualization suite accompanying the paper *"High-Order Pseudo-Spectral Solver for the 1D Nonlinear Schrödinger Equation"* by Herho et al.
