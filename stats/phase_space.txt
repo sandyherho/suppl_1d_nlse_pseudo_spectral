@@ -1,0 +1,220 @@
+======================================================================
+ROBUST PHASE SPACE ANALYSIS
+EPS-Compatible Version with Enhanced Statistics
+======================================================================
+
+(a) Single Soliton
+    Time: t = 10.101
+--------------------------------------------------
+  Pearson correlation: -0.584 (p=3.695e-48)
+  Spearman correlation: 0.005 (p=9.029e-01)
+  Normalized MI: 0.050
+  Phase Statistics:
+    Mean phase: 0.014 rad
+    Std phase: 1.842 rad
+    Circular mean: 2.301 rad
+    Circular std: 2.661
+  Amplitude Statistics:
+    Mean: 0.063
+    Std: 0.276
+    Median: 0.000
+    Maximum: 2.000
+  Geometric Properties:
+    RMS radius: 0.283
+    Centroid: (-0.043, 0.021)
+    Eccentricity: 0.897
+  Distribution Shape:
+    Skewness (Re): -5.957
+    Skewness (Im): 5.480
+    Kurtosis (Amp): 28.743
+  Data Points:
+    Total: 512
+    Above threshold: 55
+    Plotted: 55
+    Point size: 25 (large for visibility)
+
+(b) Two-Soliton
+    Time: t = 10.101
+--------------------------------------------------
+  Pearson correlation: 0.067 (p=1.276e-01)
+  Spearman correlation: 0.012 (p=7.931e-01)
+  Normalized MI: 0.116
+  Phase Statistics:
+    Mean phase: 0.010 rad
+    Std phase: 1.789 rad
+    Circular mean: 1.072 rad
+    Circular std: 2.848
+  Amplitude Statistics:
+    Mean: 0.126
+    Std: 0.352
+    Median: 0.000
+    Maximum: 1.997
+  Geometric Properties:
+    RMS radius: 0.374
+    Centroid: (-0.022, 0.011)
+    Eccentricity: 0.455
+  Distribution Shape:
+    Skewness (Re): -3.296
+    Skewness (Im): 1.586
+    Kurtosis (Amp): 11.076
+  Data Points:
+    Total: 512
+    Above threshold: 122
+    Plotted: 122
+    Point size: 25 (large for visibility)
+
+(c) Breather
+    Time: t = 10.101
+--------------------------------------------------
+  Pearson correlation: 0.800 (p=3.332e-115)
+  Spearman correlation: 0.301 (p=3.311e-12)
+  Normalized MI: 0.150
+  Phase Statistics:
+    Mean phase: 0.130 rad
+    Std phase: 1.765 rad
+    Circular mean: 1.374 rad
+    Circular std: 2.151
+  Amplitude Statistics:
+    Mean: 0.170
+    Std: 0.344
+    Median: 0.073
+    Maximum: 2.866
+  Geometric Properties:
+    RMS radius: 0.384
+    Centroid: (-0.038, -0.028)
+    Eccentricity: 0.947
+  Distribution Shape:
+    Skewness (Re): -4.442
+    Skewness (Im): -5.040
+    Kurtosis (Amp): 32.778
+  Data Points:
+    Total: 512
+    Above threshold: 401
+    Plotted: 401
+    Point size: 25 (large for visibility)
+
+(d) Modulation
+    Time: t = 10.101
+--------------------------------------------------
+  Pearson correlation: 0.973 (p=0.000e+00)
+  Spearman correlation: 0.871 (p=2.993e-159)
+  Normalized MI: 0.344
+  Phase Statistics:
+    Mean phase: -0.157 rad
+    Std phase: 1.642 rad
+    Circular mean: 0.713 rad
+    Circular std: 1.858
+  Amplitude Statistics:
+    Mean: 0.214
+    Std: 0.363
+    Median: 0.059
+    Maximum: 1.615
+  Geometric Properties:
+    RMS radius: 0.422
+    Centroid: (-0.081, -0.098)
+    Eccentricity: 0.993
+  Distribution Shape:
+    Skewness (Re): -2.173
+    Skewness (Im): -2.237
+    Kurtosis (Amp): 4.402
+  Data Points:
+    Total: 512
+    Above threshold: 377
+    Plotted: 377
+    Point size: 25 (large for visibility)
+
+======================================================================
+ANALYSIS PARAMETERS
+======================================================================
+Axis Scaling:
+  Range: [-2.587, 2.587] for both Re and Im
+  Percentile used: 0.1% to 99.9% (robust to outliers)
+  Padding: 10%
+Statistical Methods:
+  Mutual Information bins: 50 (adaptive)
+  Threshold: 1% of max amplitude
+  Max points plotted: 2,000
+  Correlation significance: p < 0.05
+
+======================================================================
+PHYSICAL INTERPRETATION
+======================================================================
+
+Phase Space Structure Analysis:
+
+REPRESENTATION:
+- Each point: One spatial location at fixed time
+- Re(ψ): In-phase component of complex field
+- Im(ψ): Quadrature component of complex field  
+- Distance from origin: Local amplitude |ψ|
+- Angle from Re axis: Local phase arg(ψ)
+
+SCENARIO CHARACTERISTICS:
+
+(a) Single Soliton - Blue:
+   - Ring/circular pattern → constant amplitude envelope
+   - High correlation → phase-amplitude coupling
+   - Low eccentricity → isotropic in phase space
+   - Centered distribution → zero momentum in moving frame
+   - Compact structure → localized solution
+
+(b) Two-Soliton Collision - Orange/Red:
+   - Double-ring structure → two amplitude levels
+   - Intermediate correlation → partial coherence
+   - Phase spread → relative phase between solitons
+   - Larger RMS radius → higher total energy
+   - Complex pattern → nonlinear interaction
+
+(c) Breather Solution - Green:
+   - Radial spread → amplitude oscillation
+   - Star/spiral pattern → phase rotation during breathing
+   - Moderate eccentricity → anisotropic dynamics
+   - Time-periodic trajectory in phase space
+   - Rich harmonic content
+
+(d) Modulation Instability - Magenta:
+   - Dispersed cloud → loss of coherence
+   - Low correlation → phase randomization
+   - High eccentricity → strongly anisotropic
+   - Large phase spread → multiple competing modes
+   - Transition to turbulence
+
+STATISTICAL MEASURES:
+
+1. Correlation Coefficients:
+   - Pearson: Linear relationship strength
+   - Spearman: Monotonic relationship (nonlinear)
+   - High values → coherent dynamics
+   - Low values → incoherent/turbulent
+
+2. Mutual Information (MI):
+   - Nonlinear dependence measure
+   - Normalized: 0 (independent) to 1 (deterministic)
+   - Captures complex phase-amplitude coupling
+
+3. Circular Statistics:
+   - Accounts for phase periodicity (−π to π)
+   - Circular mean: preferred phase
+   - Circular std: phase concentration
+
+4. Eccentricity:
+   - 0: Circular (isotropic)
+   - →1: Linear (strongly anisotropic)
+   - Measures phase space asymmetry
+
+5. Distribution Shape:
+   - Skewness: Asymmetry in Re/Im
+   - Kurtosis: Tail heaviness (outliers)
+   - Indicates deviation from Gaussian
+
+PHYSICAL INSIGHTS:
+
+- Solitons: Preserve phase space structure (attractors)
+- Breathers: Periodic orbits in phase space
+- Instabilities: Ergodic exploration of phase space
+- Collisions: Temporary phase space deformation
+
+The phase space representation reveals the underlying
+coherence structure and dynamical complexity of each
+nonlinear wave scenario, providing insights not visible
+in direct space-time evolution.

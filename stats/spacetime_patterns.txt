@@ -1,0 +1,96 @@
+======================================================================
+Space-Time Pattern Analysis
+======================================================================
+
+Single Soliton:
+  Space-Time Characteristics:
+    Max intensity: 4.000
+    Mean intensity: 0.080
+    Energy center drift: 20.000
+    Propagation velocity: 1.000
+    Correlation length: 1.367
+    Soliton velocity: 1.000
+    Velocity R²: 1.000
+
+Two-Soliton Collision:
+  Space-Time Characteristics:
+    Max intensity: 10.015
+    Mean intensity: 0.140
+    Energy center drift: -1.429
+    Propagation velocity: -0.071
+    Correlation length: 1.562
+
+Akhmediev Breather:
+  Space-Time Characteristics:
+    Max intensity: 14.168
+    Mean intensity: 0.147
+    Energy center drift: 9.662
+    Propagation velocity: 0.483
+    Correlation length: 3.516
+
+Modulation Instability:
+  Space-Time Characteristics:
+    Max intensity: 8.592
+    Mean intensity: 0.178
+    Energy center drift: 0.009
+    Propagation velocity: 0.000
+    Correlation length: 7.910
+
+======================================================================
+Interpretation:
+======================================================================
+
+Space-Time Pattern Analysis:
+
+PATTERN CHARACTERISTICS:
+========================
+
+1. Single Soliton:
+   - Diagonal stripe indicates constant velocity propagation
+   - Uniform intensity along trajectory shows shape preservation
+   - No dispersion demonstrates soliton stability
+   - Energy center (white dashed line) follows soliton peak
+
+2. Two-Soliton Collision:
+   - Two diagonal stripes crossing form X-pattern
+   - Intensity enhancement at collision point
+   - Post-collision: solitons retain individual identity
+   - Phase shift visible as trajectory displacement
+
+3. Breather Solution:
+   - Vertical stripes show stationary position
+   - Intensity modulation creates breathing pattern
+   - Periodic bright/dark regions in time
+   - Energy center remains localized
+
+4. Modulation Instability:
+   - Initial uniform background breaks up
+   - Vertical striations indicate pattern formation
+   - Bright spots represent rogue wave formation
+   - Wavelength determined by most unstable mode
+
+PHYSICAL MECHANISMS:
+====================
+
+Key Features:
+- Stripe slope → propagation velocity
+- Stripe width → spatial extent of solution
+- Intensity variations → energy redistribution
+- Pattern formation → nonlinear dynamics
+
+Conservation Laws:
+- Energy conservation visible in intensity patterns
+- Momentum conservation in soliton trajectories
+- Phase coherence in regular patterns
+- Nonlinear selection of dominant modes
+
+DIAGNOSTIC VALUE:
+================
+
+The space-time visualization provides:
+- Direct observation of wave propagation
+- Collision and interaction dynamics
+- Pattern formation mechanisms
+- Quantitative velocity measurements
+- Energy localization and redistribution
+- Stability and instability regions

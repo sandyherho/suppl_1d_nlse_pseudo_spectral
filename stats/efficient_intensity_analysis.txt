@@ -1,0 +1,123 @@
+================================================================================
+EFFICIENT STATISTICAL ANALYSIS OF SOLITON INTENSITY
+================================================================================
+Analysis Date: 2025-09-04 01:21:15
+Quantity analyzed: |ψ|² (intensity/power density)
+
+DESCRIPTIVE STATISTICS
+================================================================================
+
+Single Soliton:
+----------------------------------------
+  Sample size:     51,200
+  Mean intensity:  0.080000 ± 0.002010 (SE)
+  Median:          0.000000
+  Std deviation:   0.454904
+  Variance:        0.20693737
+  Range:           [0.000000, 3.999996]
+  IQR:             0.000000
+  CV:              568.63%
+  Skewness:        6.719
+  Kurtosis:        46.751
+
+Two-Soliton:
+----------------------------------------
+  Sample size:     51,200
+  Mean intensity:  0.140000 ± 0.002426 (SE)
+  Median:          0.000000
+  Std deviation:   0.548869
+  Variance:        0.30125687
+  Range:           [0.000000, 10.014812]
+  IQR:             0.000136
+  CV:              392.05%
+  Skewness:        5.239
+  Kurtosis:        33.505
+
+Breather:
+----------------------------------------
+  Sample size:     51,200
+  Mean intensity:  0.147326 ± 0.003789 (SE)
+  Median:          0.004787
+  Std deviation:   0.857424
+  Variance:        0.73517524
+  Range:           [0.000000, 14.168128]
+  IQR:             0.020776
+  CV:              581.99%
+  Skewness:        8.616
+  Kurtosis:        82.813
+
+Modulation:
+----------------------------------------
+  Sample size:     51,200
+  Mean intensity:  0.177682 ± 0.002047 (SE)
+  Median:          0.003135
+  Std deviation:   0.463165
+  Variance:        0.21452157
+  Range:           [0.000000, 8.591684]
+  IQR:             0.103342
+  CV:              260.67%
+  Skewness:        5.161
+  Kurtosis:        41.110
+
+================================================================================
+HYPOTHESIS TESTS (on sampled data)
+================================================================================
+
+Kruskal-Wallis H-test:
+  H-statistic: 17831.3419
+  p-value:     0.0000e+00
+  Result:      Significant differences between groups
+
+================================================================================
+EFFECT SIZES (Cliff's Delta)
+================================================================================
+
+Single Soliton vs Two-Soliton:
+  Cliff's δ = -0.627 (large)
+
+Single Soliton vs Breather:
+  Cliff's δ = -0.796 (large)
+
+Single Soliton vs Modulation:
+  Cliff's δ = -0.836 (large)
+
+Two-Soliton vs Breather:
+  Cliff's δ = -0.532 (large)
+
+Two-Soliton vs Modulation:
+  Cliff's δ = -0.644 (large)
+
+Breather vs Modulation:
+  Cliff's δ = -0.088 (negligible)
+
+================================================================================
+PHYSICAL INTERPRETATION
+================================================================================
+
+Key Physical Insights:
+
+1. INTENSITY (|ψ|²) REPRESENTS:
+   - Power density in nonlinear optics
+   - Energy density in the wave field
+   - Observable quantity in experiments
+   
+2. CONSERVATION PROPERTIES:
+   - Total power ∫|ψ|²dx is conserved for NLSE
+   - Peak intensity indicates focusing/defocusing
+   - Distribution width relates to energy localization
+
+3. SCENARIO CHARACTERISTICS:
+   - Single Soliton: Localized intensity, sech² profile
+   - Two-Soliton: Intensity variations during collision
+   - Breather: Periodic intensity modulation
+   - Modulation Instability: Growth of sidebands, energy redistribution
+
+4. STATISTICAL FEATURES:
+   - High skewness: Rare high-intensity events (rogue waves)
+   - High kurtosis: Sharp peaks, heavy tails
+   - Large variance: Energy fluctuations
+
+5. EFFICIENCY NOTES:
+   - Online algorithms: O(1) memory for basic statistics
+   - Reservoir sampling: Maintains representativeness
+   - Total processing: O(n) time, O(k) space (k = sample size)

@@ -1,0 +1,1244 @@
+================================================================================
+COMPREHENSIVE ENTROPY ANALYSIS FOR 1D NLSE DYNAMICS
+================================================================================
+Analysis Date: 2025-09-03 15:44:31
+Number of Scenarios: 4
+
+================================================================================
+SCENARIO: Single Soliton
+================================================================================
+Grid Points: 512
+Time Steps: 100
+Time Range: [0.000, 20.000]
+Spatial Range: [-25.000, 24.902]
+
+
+Time t = 0.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  2.940
+  Spectral: 3.623
+
+Generalized Entropies:
+  Renyi (a=0):   5.147 (Hartley)
+  Renyi (a=2):   2.732 (Collision)
+  Renyi (a=inf): 2.332 (Min-entropy)
+  Tsallis (q=0.5): 8.053
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.760
+  Sample Entropy:  0.005
+  Differential:    -5.853
+
+Complexity Measures:
+  Statistical (S*D): 15.238
+  Normalized H:      0.471
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    61
+  Bandwidth:       0.018
+  Mean Frequency:  0.016
+
+Time t = 5.051:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  2.940
+  Spectral: 3.623
+
+Generalized Entropies:
+  Renyi (a=0):   6.054 (Hartley)
+  Renyi (a=2):   2.732 (Collision)
+  Renyi (a=inf): 2.330 (Min-entropy)
+  Tsallis (q=0.5): 8.053
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.972
+  Sample Entropy:  0.005
+  Differential:    -5.842
+
+Complexity Measures:
+  Statistical (S*D): 15.238
+  Normalized H:      0.471
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    61
+  Bandwidth:       0.018
+  Mean Frequency:  0.016
+
+Time t = 10.101:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  2.940
+  Spectral: 3.623
+
+Generalized Entropies:
+  Renyi (a=0):   6.028 (Hartley)
+  Renyi (a=2):   2.732 (Collision)
+  Renyi (a=inf): 2.326 (Min-entropy)
+  Tsallis (q=0.5): 8.053
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.959
+  Sample Entropy:  0.005
+  Differential:    -5.855
+
+Complexity Measures:
+  Statistical (S*D): 15.238
+  Normalized H:      0.471
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    61
+  Bandwidth:       0.018
+  Mean Frequency:  0.016
+
+Time t = 15.152:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  2.940
+  Spectral: 3.623
+
+Generalized Entropies:
+  Renyi (a=0):   6.232 (Hartley)
+  Renyi (a=2):   2.732 (Collision)
+  Renyi (a=inf): 2.329 (Min-entropy)
+  Tsallis (q=0.5): 8.053
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.969
+  Sample Entropy:  0.005
+  Differential:    -5.837
+
+Complexity Measures:
+  Statistical (S*D): 15.238
+  Normalized H:      0.471
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    61
+  Bandwidth:       0.018
+  Mean Frequency:  0.016
+
+Time t = 20.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  2.940
+  Spectral: 3.623
+
+Generalized Entropies:
+  Renyi (a=0):   6.236 (Hartley)
+  Renyi (a=2):   2.732 (Collision)
+  Renyi (a=inf): 2.332 (Min-entropy)
+  Tsallis (q=0.5): 8.053
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.972
+  Sample Entropy:  0.005
+  Differential:    -5.853
+
+Complexity Measures:
+  Statistical (S*D): 15.238
+  Normalized H:      0.471
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    61
+  Bandwidth:       0.018
+  Mean Frequency:  0.016
+
+========================================
+TEMPORAL STATISTICS:
+========================================
+
+Shannon Spatial:
+  Initial: 2.940
+  Final:   2.940
+  Change:  0.000
+  Mean:    2.940
+  Std:     0.000
+  Min:     2.940
+  Max:     2.940
+
+Shannon Spectral:
+  Initial: 3.623
+  Final:   3.623
+  Change:  -0.000
+  Mean:    3.623
+  Std:     0.000
+  Min:     3.623
+  Max:     3.623
+
+Renyi 0:
+  Initial: 5.147
+  Final:   6.236
+  Change:  1.089
+  Mean:    5.940
+  Std:     0.406
+  Min:     5.147
+  Max:     6.236
+
+Renyi 2:
+  Initial: 2.732
+  Final:   2.732
+  Change:  0.000
+  Mean:    2.732
+  Std:     0.000
+  Min:     2.732
+  Max:     2.732
+
+Renyi Inf:
+  Initial: 2.332
+  Final:   2.332
+  Change:  0.000
+  Mean:    2.330
+  Std:     0.002
+  Min:     2.326
+  Max:     2.332
+
+Tsallis 0.5:
+  Initial: 8.053
+  Final:   8.053
+  Change:  0.000
+  Mean:    8.053
+  Std:     0.000
+  Min:     8.053
+  Max:     8.053
+
+Tsallis 2:
+  Initial: 0.935
+  Final:   0.935
+  Change:  0.000
+  Mean:    0.935
+  Std:     0.000
+  Min:     0.935
+  Max:     0.935
+
+Permutation:
+  Initial: 0.760
+  Final:   0.972
+  Change:  0.212
+  Mean:    0.927
+  Std:     0.083
+  Min:     0.760
+  Max:     0.972
+
+Sample:
+  Initial: 0.005
+  Final:   0.005
+  Change:  0.000
+  Mean:    0.005
+  Std:     0.000
+  Min:     0.005
+  Max:     0.005
+
+Complexity Sd:
+  Initial: 15.238
+  Final:   15.238
+  Change:  -0.000
+  Mean:    15.238
+  Std:     0.000
+  Min:     15.238
+  Max:     15.238
+
+Differential:
+  Initial: -5.853
+  Final:   -5.853
+  Change:  -0.000
+  Mean:    -5.848
+  Std:     0.007
+  Min:     -5.855
+  Max:     -5.837
+
+Number of Modes:
+  Initial: 61
+  Final:   61
+  Change:  0
+  Mean:    61
+  Min:     61
+  Max:     61
+
+Bandwidth:
+  Initial: 0.018
+  Final:   0.018
+  Change:  -0.000
+  Mean:    0.018
+  Std:     0.000
+  Min:     0.018
+  Max:     0.018
+
+Mean Freq:
+  Initial: 0.016
+  Final:   0.016
+  Change:  0.000
+  Mean:    0.016
+  Std:     0.000
+  Min:     0.016
+  Max:     0.016
+
+========================================
+FULL TEMPORAL EVOLUTION:
+========================================
+
+Shannon Entropy Evolution:
+  Monotonic Trend: 0.007
+  Oscillation Amplitude: 0.000
+  Coefficient of Variation: 0.000
+
+Entropy Production:
+  Mean Rate: 0.000
+  Max Rate:  0.000
+  Total Production: 0.000
+================================================================================
+SCENARIO: Two-Soliton Collision
+================================================================================
+Grid Points: 512
+Time Steps: 100
+Time Range: [0.000, 20.000]
+Spatial Range: [-25.000, 24.902]
+
+
+Time t = 0.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.746
+  Spectral: 4.080
+
+Generalized Entropies:
+  Renyi (a=0):   5.971 (Hartley)
+  Renyi (a=2):   3.499 (Collision)
+  Renyi (a=inf): 2.892 (Min-entropy)
+  Tsallis (q=0.5): 13.199
+  Tsallis (q=2):   0.970
+
+Time Series Measures:
+  Permutation:     0.408
+  Sample Entropy:  0.011
+  Differential:    -5.256
+
+Complexity Measures:
+  Statistical (S*D): 8.693
+  Normalized H:      0.601
+  Disequilibrium D:  0.028
+
+Spectral Properties:
+  Active Modes:    84
+  Bandwidth:       0.035
+  Mean Frequency:  0.004
+
+Time t = 5.051:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.053
+  Spectral: 4.054
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   2.736 (Collision)
+  Renyi (a=inf): 2.111 (Min-entropy)
+  Tsallis (q=0.5): 9.135
+  Tsallis (q=2):   0.935
+
+Time Series Measures:
+  Permutation:     0.989
+  Sample Entropy:  0.005
+  Differential:    -5.001
+
+Complexity Measures:
+  Statistical (S*D): 15.759
+  Normalized H:      0.489
+  Disequilibrium D:  0.063
+
+Spectral Properties:
+  Active Modes:    87
+  Bandwidth:       0.043
+  Mean Frequency:  0.004
+
+Time t = 10.101:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.746
+  Spectral: 4.080
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   3.499 (Collision)
+  Renyi (a=inf): 2.889 (Min-entropy)
+  Tsallis (q=0.5): 13.202
+  Tsallis (q=2):   0.970
+
+Time Series Measures:
+  Permutation:     0.928
+  Sample Entropy:  0.011
+  Differential:    -5.235
+
+Complexity Measures:
+  Statistical (S*D): 8.693
+  Normalized H:      0.601
+  Disequilibrium D:  0.028
+
+Spectral Properties:
+  Active Modes:    83
+  Bandwidth:       0.035
+  Mean Frequency:  0.004
+
+Time t = 15.152:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.746
+  Spectral: 4.079
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   3.499 (Collision)
+  Renyi (a=inf): 2.889 (Min-entropy)
+  Tsallis (q=0.5): 13.196
+  Tsallis (q=2):   0.970
+
+Time Series Measures:
+  Permutation:     0.938
+  Sample Entropy:  0.011
+  Differential:    -5.234
+
+Complexity Measures:
+  Statistical (S*D): 8.693
+  Normalized H:      0.601
+  Disequilibrium D:  0.028
+
+Spectral Properties:
+  Active Modes:    82
+  Bandwidth:       0.035
+  Mean Frequency:  0.004
+
+Time t = 20.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.746
+  Spectral: 4.080
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   3.499 (Collision)
+  Renyi (a=inf): 2.887 (Min-entropy)
+  Tsallis (q=0.5): 13.203
+  Tsallis (q=2):   0.970
+
+Time Series Measures:
+  Permutation:     0.930
+  Sample Entropy:  0.011
+  Differential:    -5.235
+
+Complexity Measures:
+  Statistical (S*D): 8.693
+  Normalized H:      0.601
+  Disequilibrium D:  0.028
+
+Spectral Properties:
+  Active Modes:    84
+  Bandwidth:       0.035
+  Mean Frequency:  0.004
+
+========================================
+TEMPORAL STATISTICS:
+========================================
+
+Shannon Spatial:
+  Initial: 3.746
+  Final:   3.746
+  Change:  -0.000
+  Mean:    3.608
+  Std:     0.277
+  Min:     3.053
+  Max:     3.746
+
+Shannon Spectral:
+  Initial: 4.080
+  Final:   4.080
+  Change:  -0.001
+  Mean:    4.075
+  Std:     0.010
+  Min:     4.054
+  Max:     4.080
+
+Renyi 0:
+  Initial: 5.971
+  Final:   6.238
+  Change:  0.267
+  Mean:    6.185
+  Std:     0.107
+  Min:     5.971
+  Max:     6.238
+
+Renyi 2:
+  Initial: 3.499
+  Final:   3.499
+  Change:  -0.000
+  Mean:    3.346
+  Std:     0.305
+  Min:     2.736
+  Max:     3.499
+
+Renyi Inf:
+  Initial: 2.892
+  Final:   2.887
+  Change:  -0.005
+  Mean:    2.734
+  Std:     0.311
+  Min:     2.111
+  Max:     2.892
+
+Tsallis 0.5:
+  Initial: 13.199
+  Final:   13.203
+  Change:  0.004
+  Mean:    12.387
+  Std:     1.626
+  Min:     9.135
+  Max:     13.203
+
+Tsallis 2:
+  Initial: 0.970
+  Final:   0.970
+  Change:  -0.000
+  Mean:    0.963
+  Std:     0.014
+  Min:     0.935
+  Max:     0.970
+
+Permutation:
+  Initial: 0.408
+  Final:   0.930
+  Change:  0.523
+  Mean:    0.839
+  Std:     0.217
+  Min:     0.408
+  Max:     0.989
+
+Sample:
+  Initial: 0.011
+  Final:   0.011
+  Change:  -0.000
+  Mean:    0.010
+  Std:     0.003
+  Min:     0.005
+  Max:     0.011
+
+Complexity Sd:
+  Initial: 8.693
+  Final:   8.693
+  Change:  0.000
+  Mean:    10.106
+  Std:     2.827
+  Min:     8.693
+  Max:     15.759
+
+Differential:
+  Initial: -5.256
+  Final:   -5.235
+  Change:  0.020
+  Mean:    -5.192
+  Std:     0.096
+  Min:     -5.256
+  Max:     -5.001
+
+Number of Modes:
+  Initial: 84
+  Final:   84
+  Change:  0
+  Mean:    84
+  Min:     82
+  Max:     87
+
+Bandwidth:
+  Initial: 0.035
+  Final:   0.035
+  Change:  0.000
+  Mean:    0.036
+  Std:     0.003
+  Min:     0.035
+  Max:     0.043
+
+Mean Freq:
+  Initial: 0.004
+  Final:   0.004
+  Change:  0.000
+  Mean:    0.004
+  Std:     0.000
+  Min:     0.004
+  Max:     0.004
+
+========================================
+FULL TEMPORAL EVOLUTION:
+========================================
+
+Shannon Entropy Evolution:
+  Monotonic Trend: -0.286
+  Oscillation Amplitude: 0.794
+  Coefficient of Variation: 0.039
+
+Entropy Production:
+  Mean Rate: -0.000
+  Max Rate:  1.839
+  Total Production: -0.000
+================================================================================
+SCENARIO: Breather Solution
+================================================================================
+Grid Points: 512
+Time Steps: 100
+Time Range: [0.000, 20.000]
+Spatial Range: [-25.000, 24.902]
+
+
+Time t = 0.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.384
+  Spectral: 3.171
+
+Generalized Entropies:
+  Renyi (a=0):   5.759 (Hartley)
+  Renyi (a=2):   3.197 (Collision)
+  Renyi (a=inf): 2.819 (Min-entropy)
+  Tsallis (q=0.5): 10.564
+  Tsallis (q=2):   0.959
+
+Time Series Measures:
+  Permutation:     0.394
+  Sample Entropy:  0.005
+  Differential:    -5.477
+
+Complexity Measures:
+  Statistical (S*D): 10.813
+  Normalized H:      0.542
+  Disequilibrium D:  0.039
+
+Spectral Properties:
+  Active Modes:    37
+  Bandwidth:       0.011
+  Mean Frequency:  0.008
+
+Time t = 5.051:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.009
+  Spectral: 4.105
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   2.393 (Collision)
+  Renyi (a=inf): 1.865 (Min-entropy)
+  Tsallis (q=0.5): 13.474
+  Tsallis (q=2):   0.909
+
+Time Series Measures:
+  Permutation:     0.819
+  Sample Entropy:  0.010
+  Differential:    -4.022
+
+Complexity Measures:
+  Statistical (S*D): 22.080
+  Normalized H:      0.482
+  Disequilibrium D:  0.089
+
+Spectral Properties:
+  Active Modes:    99
+  Bandwidth:       0.032
+  Mean Frequency:  0.008
+
+Time t = 10.101:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.486
+  Spectral: 3.665
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   2.807 (Collision)
+  Renyi (a=inf): 2.217 (Min-entropy)
+  Tsallis (q=0.5): 18.078
+  Tsallis (q=2):   0.940
+
+Time Series Measures:
+  Permutation:     0.556
+  Sample Entropy:  0.012
+  Differential:    -3.878
+
+Complexity Measures:
+  Statistical (S*D): 16.718
+  Normalized H:      0.559
+  Disequilibrium D:  0.058
+
+Spectral Properties:
+  Active Modes:    67
+  Bandwidth:       0.022
+  Mean Frequency:  0.008
+
+Time t = 15.152:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.602
+  Spectral: 3.518
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   2.901 (Collision)
+  Renyi (a=inf): 2.308 (Min-entropy)
+  Tsallis (q=0.5): 19.747
+  Tsallis (q=2):   0.945
+
+Time Series Measures:
+  Permutation:     0.563
+  Sample Entropy:  0.019
+  Differential:    -3.928
+
+Complexity Measures:
+  Statistical (S*D): 15.668
+  Normalized H:      0.577
+  Disequilibrium D:  0.053
+
+Spectral Properties:
+  Active Modes:    63
+  Bandwidth:       0.020
+  Mean Frequency:  0.008
+
+Time t = 20.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  3.277
+  Spectral: 4.067
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   2.522 (Collision)
+  Renyi (a=inf): 1.981 (Min-entropy)
+  Tsallis (q=0.5): 18.907
+  Tsallis (q=2):   0.920
+
+Time Series Measures:
+  Permutation:     0.541
+  Sample Entropy:  0.026
+  Differential:    -3.903
+
+Complexity Measures:
+  Statistical (S*D): 21.070
+  Normalized H:      0.525
+  Disequilibrium D:  0.078
+
+Spectral Properties:
+  Active Modes:    91
+  Bandwidth:       0.029
+  Mean Frequency:  0.008
+
+========================================
+TEMPORAL STATISTICS:
+========================================
+
+Shannon Spatial:
+  Initial: 3.384
+  Final:   3.277
+  Change:  -0.107
+  Mean:    3.351
+  Std:     0.202
+  Min:     3.009
+  Max:     3.602
+
+Shannon Spectral:
+  Initial: 3.171
+  Final:   4.067
+  Change:  0.896
+  Mean:    3.705
+  Std:     0.350
+  Min:     3.171
+  Max:     4.105
+
+Renyi 0:
+  Initial: 5.759
+  Final:   6.238
+  Change:  0.479
+  Mean:    6.142
+  Std:     0.192
+  Min:     5.759
+  Max:     6.238
+
+Renyi 2:
+  Initial: 3.197
+  Final:   2.522
+  Change:  -0.675
+  Mean:    2.764
+  Std:     0.284
+  Min:     2.393
+  Max:     3.197
+
+Renyi Inf:
+  Initial: 2.819
+  Final:   1.981
+  Change:  -0.839
+  Mean:    2.238
+  Std:     0.331
+  Min:     1.865
+  Max:     2.819
+
+Tsallis 0.5:
+  Initial: 10.564
+  Final:   18.907
+  Change:  8.343
+  Mean:    16.154
+  Std:     3.539
+  Min:     10.564
+  Max:     19.747
+
+Tsallis 2:
+  Initial: 0.959
+  Final:   0.920
+  Change:  -0.039
+  Mean:    0.934
+  Std:     0.018
+  Min:     0.909
+  Max:     0.959
+
+Permutation:
+  Initial: 0.394
+  Final:   0.541
+  Change:  0.147
+  Mean:    0.575
+  Std:     0.137
+  Min:     0.394
+  Max:     0.819
+
+Sample:
+  Initial: 0.005
+  Final:   0.026
+  Change:  0.021
+  Mean:    0.015
+  Std:     0.007
+  Min:     0.005
+  Max:     0.026
+
+Complexity Sd:
+  Initial: 10.813
+  Final:   21.070
+  Change:  10.257
+  Mean:    17.270
+  Std:     4.053
+  Min:     10.813
+  Max:     22.080
+
+Differential:
+  Initial: -5.477
+  Final:   -3.903
+  Change:  1.573
+  Mean:    -4.242
+  Std:     0.619
+  Min:     -5.477
+  Max:     -3.878
+
+Number of Modes:
+  Initial: 37
+  Final:   91
+  Change:  54
+  Mean:    71
+  Min:     37
+  Max:     99
+
+Bandwidth:
+  Initial: 0.011
+  Final:   0.029
+  Change:  0.018
+  Mean:    0.023
+  Std:     0.007
+  Min:     0.011
+  Max:     0.032
+
+Mean Freq:
+  Initial: 0.008
+  Final:   0.008
+  Change:  0.000
+  Mean:    0.008
+  Std:     0.000
+  Min:     0.008
+  Max:     0.008
+
+========================================
+FULL TEMPORAL EVOLUTION:
+========================================
+
+Shannon Entropy Evolution:
+  Monotonic Trend: 0.362
+  Oscillation Amplitude: 1.110
+  Coefficient of Variation: 0.073
+
+Entropy Production:
+  Mean Rate: -0.013
+  Max Rate:  1.902
+  Total Production: -0.107
+================================================================================
+SCENARIO: Modulation Instability
+================================================================================
+Grid Points: 512
+Time Steps: 100
+Time Range: [0.000, 20.000]
+Spatial Range: [-25.000, 24.902]
+
+
+Time t = 0.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  5.015
+  Spectral: 1.548
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   4.858 (Collision)
+  Renyi (a=inf): 4.474 (Min-entropy)
+  Tsallis (q=0.5): 25.455
+  Tsallis (q=2):   0.992
+
+Time Series Measures:
+  Permutation:     0.991
+  Sample Entropy:  0.027
+  Differential:    -4.955
+
+Complexity Measures:
+  Statistical (S*D): 2.391
+  Normalized H:      0.804
+  Disequilibrium D:  0.006
+
+Spectral Properties:
+  Active Modes:    7
+  Bandwidth:       0.010
+  Mean Frequency:  0.000
+
+Time t = 5.051:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  4.616
+  Spectral: 2.926
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   4.299 (Collision)
+  Renyi (a=inf): 3.892 (Min-entropy)
+  Tsallis (q=0.5): 22.819
+  Tsallis (q=2):   0.986
+
+Time Series Measures:
+  Permutation:     0.983
+  Sample Entropy:  0.024
+  Differential:    -4.651
+
+Complexity Measures:
+  Statistical (S*D): 4.405
+  Normalized H:      0.740
+  Disequilibrium D:  0.012
+
+Spectral Properties:
+  Active Modes:    40
+  Bandwidth:       0.015
+  Mean Frequency:  0.000
+
+Time t = 10.101:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  4.408
+  Spectral: 2.937
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   4.122 (Collision)
+  Renyi (a=inf): 3.552 (Min-entropy)
+  Tsallis (q=0.5): 20.951
+  Tsallis (q=2):   0.984
+
+Time Series Measures:
+  Permutation:     0.978
+  Sample Entropy:  0.044
+  Differential:    -4.495
+
+Complexity Measures:
+  Statistical (S*D): 5.160
+  Normalized H:      0.707
+  Disequilibrium D:  0.014
+
+Spectral Properties:
+  Active Modes:    35
+  Bandwidth:       0.017
+  Mean Frequency:  0.000
+
+Time t = 15.152:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  4.873
+  Spectral: 2.264
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   4.572 (Collision)
+  Renyi (a=inf): 3.716 (Min-entropy)
+  Tsallis (q=0.5): 24.796
+  Tsallis (q=2):   0.990
+
+Time Series Measures:
+  Permutation:     0.988
+  Sample Entropy:  0.032
+  Differential:    -4.360
+
+Complexity Measures:
+  Statistical (S*D): 3.355
+  Normalized H:      0.781
+  Disequilibrium D:  0.008
+
+Spectral Properties:
+  Active Modes:    27
+  Bandwidth:       0.012
+  Mean Frequency:  0.000
+
+Time t = 20.000:
+----------------------------------------
+Shannon Entropies:
+  Spatial:  4.902
+  Spectral: 2.098
+
+Generalized Entropies:
+  Renyi (a=0):   6.238 (Hartley)
+  Renyi (a=2):   4.665 (Collision)
+  Renyi (a=inf): 4.103 (Min-entropy)
+  Tsallis (q=0.5): 24.917
+  Tsallis (q=2):   0.991
+
+Time Series Measures:
+  Permutation:     0.984
+  Sample Entropy:  0.025
+  Differential:    -4.612
+
+Complexity Measures:
+  Statistical (S*D): 3.003
+  Normalized H:      0.786
+  Disequilibrium D:  0.007
+
+Spectral Properties:
+  Active Modes:    21
+  Bandwidth:       0.011
+  Mean Frequency:  0.000
+
+========================================
+TEMPORAL STATISTICS:
+========================================
+
+Shannon Spatial:
+  Initial: 5.015
+  Final:   4.902
+  Change:  -0.113
+  Mean:    4.763
+  Std:     0.220
+  Min:     4.408
+  Max:     5.015
+
+Shannon Spectral:
+  Initial: 1.548
+  Final:   2.098
+  Change:  0.550
+  Mean:    2.355
+  Std:     0.527
+  Min:     1.548
+  Max:     2.937
+
+Renyi 0:
+  Initial: 6.238
+  Final:   6.238
+  Change:  0.000
+  Mean:    6.238
+  Std:     0.000
+  Min:     6.238
+  Max:     6.238
+
+Renyi 2:
+  Initial: 4.858
+  Final:   4.665
+  Change:  -0.193
+  Mean:    4.503
+  Std:     0.262
+  Min:     4.122
+  Max:     4.858
+
+Renyi Inf:
+  Initial: 4.474
+  Final:   4.103
+  Change:  -0.372
+  Mean:    3.947
+  Std:     0.321
+  Min:     3.552
+  Max:     4.474
+
+Tsallis 0.5:
+  Initial: 25.455
+  Final:   24.917
+  Change:  -0.537
+  Mean:    23.788
+  Std:     1.677
+  Min:     20.951
+  Max:     25.455
+
+Tsallis 2:
+  Initial: 0.992
+  Final:   0.991
+  Change:  -0.002
+  Mean:    0.989
+  Std:     0.003
+  Min:     0.984
+  Max:     0.992
+
+Permutation:
+  Initial: 0.991
+  Final:   0.984
+  Change:  -0.007
+  Mean:    0.985
+  Std:     0.004
+  Min:     0.978
+  Max:     0.991
+
+Sample:
+  Initial: 0.027
+  Final:   0.025
+  Change:  -0.002
+  Mean:    0.030
+  Std:     0.008
+  Min:     0.024
+  Max:     0.044
+
+Complexity Sd:
+  Initial: 2.391
+  Final:   3.003
+  Change:  0.611
+  Mean:    3.663
+  Std:     0.994
+  Min:     2.391
+  Max:     5.160
+
+Differential:
+  Initial: -4.955
+  Final:   -4.612
+  Change:  0.343
+  Mean:    -4.615
+  Std:     0.198
+  Min:     -4.955
+  Max:     -4.360
+
+Number of Modes:
+  Initial: 7
+  Final:   21
+  Change:  14
+  Mean:    26
+  Min:     7
+  Max:     40
+
+Bandwidth:
+  Initial: 0.010
+  Final:   0.011
+  Change:  0.002
+  Mean:    0.013
+  Std:     0.003
+  Min:     0.010
+  Max:     0.017
+
+Mean Freq:
+  Initial: 0.000
+  Final:   0.000
+  Change:  0.000
+  Mean:    0.000
+  Std:     0.000
+  Min:     0.000
+  Max:     0.000
+
+========================================
+FULL TEMPORAL EVOLUTION:
+========================================
+
+Shannon Entropy Evolution:
+  Monotonic Trend: -0.172
+  Oscillation Amplitude: 1.084
+  Coefficient of Variation: 0.057
+
+Entropy Production:
+  Mean Rate: -0.005
+  Max Rate:  1.025
+  Total Production: -0.113
+
+================================================================================
+COMPARATIVE ANALYSIS ACROSS SCENARIOS
+================================================================================
+
+Initial Shannon Entropy Comparison:
+  Single Soliton                : 2.940
+  Two-Soliton Collision         : 3.746
+  Breather Solution             : 3.384
+  Modulation Instability        : 5.015
+
+Final Shannon Entropy Comparison:
+  Single Soliton                : 2.940
+  Two-Soliton Collision         : 3.746
+  Breather Solution             : 3.277
+  Modulation Instability        : 4.902
+
+Mean Complexity Comparison:
+  Single Soliton                : 15.238
+  Two-Soliton Collision         : 10.106
+  Breather Solution             : 17.270
+  Modulation Instability        : 3.663
+
+================================================================================
+PHYSICAL INTERPRETATION
+================================================================================
+
+1. SHANNON ENTROPY:
+   - Measures information content and localization
+   - Low values: Localized states (solitons)
+   - High values: Delocalized states (modulation instability)
+   - Oscillations: Breathing modes or periodic dynamics
+
+2. SPECTRAL ENTROPY:
+   - Quantifies frequency distribution complexity
+   - Low values: Few dominant modes (coherent)
+   - High values: Many modes (turbulent/chaotic)
+
+3. RENYI ENTROPIES:
+   - a=0: Counts support size (Hartley)
+   - a=2: Sensitive to correlations (Collision)
+   - a=inf: Dominated by peak (Min-entropy)
+   - Different a values probe different scales
+
+4. TSALLIS ENTROPY:
+   - Non-extensive entropy for long-range correlations
+   - q<1: Sub-extensive systems
+   - q>1: Super-extensive systems
+
+5. PERMUTATION ENTROPY:
+   - Captures temporal ordering patterns
+   - Robust to noise and outliers
+   - Indicates dynamical complexity
+
+6. SAMPLE ENTROPY:
+   - Measures time series regularity
+   - Low values: Regular, predictable
+   - High values: Irregular, complex
+
+7. STATISTICAL COMPLEXITY:
+   - Distinguishes between order and randomness
+   - Maximum at intermediate entropy
+   - Captures emergent structures
+
+8. SPECTRAL CHARACTERISTICS:
+   - Active modes: Degree of multimodality
+   - Bandwidth: Frequency spread
+   - Mean frequency: Dominant oscillation
+
+SCENARIO-SPECIFIC INSIGHTS:
+- Single Soliton: Low entropy, high coherence, stable
+- Two-Soliton: Moderate entropy, collision dynamics
+- Breather: Oscillating entropy, periodic dynamics
+- Modulation: Highest initial entropy, pattern formation
