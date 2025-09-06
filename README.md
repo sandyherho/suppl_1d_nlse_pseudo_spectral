@@ -4,11 +4,11 @@
 [![DOI](https://zenodo.org/badge/1050333859.svg)](https://doi.org/10.5281/zenodo.17053394)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
-Comprehensive data analysis and visualization suite accompanying the paper *"High-Order Pseudo-Spectral Solver for the 1D Nonlinear Schrödinger Equation"* by Herho et al.
+Comprehensive data analysis and visualization suite accompanying the paper **`simple-idealized-1d-nlse`: Pseudo-Spectral Solver for the 1D Nonlinear Schrödinger Equation** by Herho et al.
 
 ## Overview
 
-This repository contains the complete computational results, analysis scripts, and visualizations demonstrating the capabilities of the [`simple-idealized-1d-nlse`](https://github.com/samuderasains/simple-idealized-1d-nlse) solver package (v0.0.3). We analyze four canonical NLSE scenarios using advanced statistical and entropy-based methods.
+This repository contains the complete computational results, analysis scripts, and visualizations demonstrating the capabilities of the [`simple-idealized-1d-nlse`](https://github.com/sandyherho/simple_idealized_1d_nlse) solver package (v0.0.3). We analyze four canonical NLSE scenarios using advanced statistical and entropy-based methods.
 
 ## Repository Structure
 
