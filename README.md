@@ -96,7 +96,7 @@ If you use this data or code, please cite:
 
 ```bibtex
 @article{herho2025nlse,
-  title={{H}igh-{O}rder {P}seudo-{S}pectral {S}olver for the {1D} {N}onlinear {S}chrödinger {E}quation},
+  title={texttt{simple-idealized-1d-nlse}: {P}seudo-{S}pectral {S}olver for the {1D} {N}onlinear {S}chr\"odinger {E}quation},
   author={Herho, S. H. S. and Anwar, I. P. and Khadami, F. and 
           Riawan, E. and Suwarman, R. and Irawan, D. E.},
   journal={xxxx},
