@@ -1,7 +1,7 @@
 ================================================================================
 EFFICIENT STATISTICAL ANALYSIS OF SOLITON INTENSITY
 ================================================================================
-Analysis Date: 2025-09-04 01:21:15
+Analysis Date: 2025-09-06 16:39:15
 Quantity analyzed: |ψ|² (intensity/power density)
 
 DESCRIPTIVE STATISTICS
@@ -28,7 +28,7 @@ Two-Soliton:
   Std deviation:   0.548869
   Variance:        0.30125687
   Range:           [0.000000, 10.014812]
-  IQR:             0.000136
+  IQR:             0.000128
   CV:              392.05%
   Skewness:        5.239
   Kurtosis:        33.505
@@ -37,11 +37,11 @@ Breather:
 ----------------------------------------
   Sample size:     51,200
   Mean intensity:  0.147326 ± 0.003789 (SE)
-  Median:          0.004787
+  Median:          0.004738
   Std deviation:   0.857424
   Variance:        0.73517524
   Range:           [0.000000, 14.168128]
-  IQR:             0.020776
+  IQR:             0.019781
   CV:              581.99%
   Skewness:        8.616
   Kurtosis:        82.813
@@ -50,11 +50,11 @@ Modulation:
 ----------------------------------------
   Sample size:     51,200
   Mean intensity:  0.177682 ± 0.002047 (SE)
-  Median:          0.003135
+  Median:          0.003264
   Std deviation:   0.463165
   Variance:        0.21452157
   Range:           [0.000000, 8.591684]
-  IQR:             0.103342
+  IQR:             0.105901
   CV:              260.67%
   Skewness:        5.161
   Kurtosis:        41.110
@@ -64,7 +64,7 @@ HYPOTHESIS TESTS (on sampled data)
 ================================================================================
 
 Kruskal-Wallis H-test:
-  H-statistic: 17831.3419
+  H-statistic: 17941.3121
   p-value:     0.0000e+00
   Result:      Significant differences between groups
 
@@ -73,22 +73,22 @@ EFFECT SIZES (Cliff's Delta)
 ================================================================================
 
 Single Soliton vs Two-Soliton:
-  Cliff's δ = -0.627 (large)
+  Cliff's δ = -0.637 (large)
 
 Single Soliton vs Breather:
-  Cliff's δ = -0.796 (large)
+  Cliff's δ = -0.786 (large)
 
 Single Soliton vs Modulation:
-  Cliff's δ = -0.836 (large)
+  Cliff's δ = -0.843 (large)
 
 Two-Soliton vs Breather:
-  Cliff's δ = -0.532 (large)
+  Cliff's δ = -0.570 (large)
 
 Two-Soliton vs Modulation:
-  Cliff's δ = -0.644 (large)
+  Cliff's δ = -0.652 (large)
 
 Breather vs Modulation:
-  Cliff's δ = -0.088 (negligible)
+  Cliff's δ = -0.092 (negligible)
 
 ================================================================================
 PHYSICAL INTERPRETATION

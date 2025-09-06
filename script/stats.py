@@ -258,7 +258,7 @@ def main():
     
     ax1.set_xlabel(r'$|\psi|^2$', fontsize=16, fontweight='bold')
     ax1.set_ylabel('Normalized Probability Density', fontsize=16, fontweight='bold')
-    ax1.set_title('(a) Intensity Distribution', fontsize=18, fontweight='bold')
+    ax1.set_title('(a)', fontsize=18, fontweight='bold')
     ax1.legend(loc='best', frameon=True, edgecolor='gray')
     ax1.grid(True, alpha=0.3, linestyle='--')
     ax1.set_ylim([0, 1.05])
