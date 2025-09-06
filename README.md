@@ -1,5 +1,6 @@
-# Supplementary Materials: High-Order Pseudo-Spectral Solver for 1D NLSE
+# Supplementary Materials - `simple-idealized-1d-nlse`: Pseudo-Spectral Solver for the 1D Nonlinear Schrödinger Equation
 
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://zenodo.org/badge/1050333859.svg)](https://doi.org/10.5281/zenodo.17053394)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
