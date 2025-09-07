@@ -97,8 +97,8 @@ If you use this data or code, please cite:
 ```bibtex
 @article{herho2025nlse,
   title={texttt{simple-idealized-1d-nlse}: {P}seudo-{S}pectral {S}olver for the {1D} {N}onlinear {S}chr\"odinger {E}quation},
-  author={Herho, S. H. S. and Anwar, I. P. and Khadami, F. and 
-          Riawan, E. and Suwarman, R. and Irawan, D. E.},
+  author={Herho, S. H. S. and Anwar, I. P. and Khadami, F.
+  and Suwarman, R. and Irawan, D. E.},
   journal={xxxx},
   year={202x},
   note={In preparation}
