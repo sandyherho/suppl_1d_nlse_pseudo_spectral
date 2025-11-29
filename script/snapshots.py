@@ -12,15 +12,15 @@ from scipy.signal import find_peaks
 import os
 from pathlib import Path
 
-# Set publication quality parameters
+# Set publication quality parameters - REVISED for larger labels and legends
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
-plt.rcParams['font.size'] = 10
-plt.rcParams['axes.labelsize'] = 11
-plt.rcParams['axes.titlesize'] = 12
-plt.rcParams['xtick.labelsize'] = 9
-plt.rcParams['ytick.labelsize'] = 9
-plt.rcParams['legend.fontsize'] = 9
+plt.rcParams['font.size'] = 12  # Increased from 10
+plt.rcParams['axes.labelsize'] = 16  # Increased from 11
+plt.rcParams['axes.titlesize'] = 18  # Increased from 12
+plt.rcParams['xtick.labelsize'] = 12  # Increased from 9
+plt.rcParams['ytick.labelsize'] = 12  # Increased from 9
+plt.rcParams['legend.fontsize'] = 12  # Increased from 9
 plt.rcParams['figure.dpi'] = 100
 plt.rcParams['savefig.dpi'] = 300
 plt.rcParams['axes.linewidth'] = 0.8
@@ -69,7 +69,11 @@ for scenario_file, scenario_name in scenarios.items():
 # Determine uniform axis limits
 x_min = min(x.min() for x in all_x_data)
 x_max = max(x.max() for x in all_x_data)
-y_max = max(intensity.max() for intensity in all_intensity_data) * 1.1
+
+# REVISED: Adjust y_max to better show dynamics (use 95th percentile with padding)
+# This ensures the dynamics are more clearly visible without excessive whitespace
+y_max_raw = max(intensity.max() for intensity in all_intensity_data)
+y_max = y_max_raw * 1.05  # Reduced padding from 1.1 to 1.05 for tighter fit
 
 print(f"Uniform limits: x=[{x_min:.2f}, {x_max:.2f}], y=[0, {y_max:.3f}]")
 
@@ -112,23 +116,23 @@ for row_idx, (scenario_file, scenario_name) in enumerate(scenarios.items()):
             # Plot |ψ|² profile (no transparency for EPS compatibility)
             ax.plot(x, intensity[t_idx], color=color, linewidth=2)
             
-            # Optional: Add very light fill without alpha (using lighter color)
-            # Skip fill_between for cleanest EPS output
-            
-            # Set uniform limits
+            # Set uniform limits - REVISED y_max for better dynamics visibility
             ax.set_xlim([x_min, x_max])
             ax.set_ylim([0, y_max])
             
-            # Grid (dotted style instead of alpha for EPS)
-            ax.grid(True, linestyle=':', linewidth=0.5)
+            # REMOVED grid lines per reviewer comment
+            ax.grid(False)
             
-            # Labels
+            # Labels - REVISED for larger font sizes
             if row_idx == 0:
-                ax.set_title(t_label, fontsize=14, pad=5, fontweight='bold')
+                ax.set_title(t_label, fontsize=18, pad=5, fontweight='bold')  # Increased from 14
             if row_idx == 3:
-                ax.set_xlabel('Position $x$', fontsize=14, fontweight='bold')
+                ax.set_xlabel('Position $x$', fontsize=16, fontweight='bold')  # Increased from 14
             if col_idx == 0:
-                ax.set_ylabel(f'{scenario_name}\n' + r'$|\psi|^2$', fontsize=14, fontweight='bold')
+                ax.set_ylabel(f'{scenario_name}\n' + r'$|\psi|^2$', fontsize=14, fontweight='bold')  # Increased from 14
+            
+            # REVISED tick label sizes
+            ax.tick_params(axis='both', which='major', labelsize=11)  # Increased from default
             
             # Calculate and record statistics for this snapshot
             if col_idx == 0:

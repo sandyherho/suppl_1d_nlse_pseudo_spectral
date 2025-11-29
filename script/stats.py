@@ -15,15 +15,15 @@ from datetime import datetime
 
 warnings.filterwarnings('ignore')
 
-# Set publication quality parameters
+# Set publication quality parameters - REVISED for larger labels and legends
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
-plt.rcParams['font.size'] = 10
-plt.rcParams['axes.labelsize'] = 11
-plt.rcParams['axes.titlesize'] = 12
-plt.rcParams['xtick.labelsize'] = 9
-plt.rcParams['ytick.labelsize'] = 9
-plt.rcParams['legend.fontsize'] = 9
+plt.rcParams['font.size'] = 12  # Increased from 10
+plt.rcParams['axes.labelsize'] = 16  # Increased from 11
+plt.rcParams['axes.titlesize'] = 18  # Increased from 12
+plt.rcParams['xtick.labelsize'] = 12  # Increased from 9
+plt.rcParams['ytick.labelsize'] = 12  # Increased from 9
+plt.rcParams['legend.fontsize'] = 12  # Increased from 9
 plt.rcParams['figure.dpi'] = 100
 plt.rcParams['savefig.dpi'] = 300
 
@@ -236,10 +236,10 @@ def main():
     
     # Find global range
     global_min = min(s['min'] for s in all_stats.values())
-    global_max = min(s['max'] for s in all_stats.values())  # Cap at reasonable value
+    global_max = min(s['max'] for s in all_stats.values())
     
-    # Adjust max if needed (avoid extreme outliers in plot)
-    percentile_99 = max(s['p90'] for s in all_stats.values()) * 2
+    # REVISED: Adjust max for better dynamics visibility
+    percentile_99 = max(s['p90'] for s in all_stats.values()) * 1.8  # Reduced from 2
     global_max = min(global_max, percentile_99)
     
     x_grid = np.linspace(0, global_max, 500)
@@ -256,12 +256,22 @@ def main():
                 label=scenario_name, alpha=0.8)
         ax1.fill_between(x_grid, density, alpha=0.2, color=colors[idx])
     
-    ax1.set_xlabel(r'$|\psi|^2$', fontsize=16, fontweight='bold')
-    ax1.set_ylabel('Normalized Probability Density', fontsize=16, fontweight='bold')
-    ax1.set_title('(a)', fontsize=18, fontweight='bold')
-    ax1.legend(loc='best', frameon=True, edgecolor='gray')
-    ax1.grid(True, alpha=0.3, linestyle='--')
+    # REVISED: Larger axis labels
+    ax1.set_xlabel(r'$|\psi|^2$', fontsize=18, fontweight='bold')  # Increased from 16
+    ax1.set_ylabel('Normalized Probability Density', fontsize=18, fontweight='bold')  # Increased from 16
+    ax1.set_title('(a)', fontsize=20, fontweight='bold')  # Increased from 18
+    
+    # REVISED: Larger legend
+    ax1.legend(loc='best', frameon=True, edgecolor='gray', fontsize=14)  # Added fontsize
+    
+    # REMOVED grid lines per reviewer comment
+    ax1.grid(False)
+    
+    # REVISED: Adjusted y-axis for better dynamics visibility
     ax1.set_ylim([0, 1.05])
+    
+    # REVISED: Larger tick labels
+    ax1.tick_params(axis='both', which='major', labelsize=14)
     
     # Bottom panel: Boxplot of intensity
     ax2 = plt.subplot(2, 1, 2)
@@ -280,12 +290,18 @@ def main():
         patch.set_facecolor(color)
         patch.set_alpha(0.7)
     
-    ax2.set_xlabel('Scenario', fontsize=16, fontweight='bold')
-    ax2.set_ylabel(r'$|\psi|^2$', fontsize=16, fontweight='bold')
-    ax2.set_title('(b)', fontsize=18, fontweight='bold')
+    # REVISED: Larger axis labels
+    ax2.set_xlabel('Scenario', fontsize=18, fontweight='bold')  # Increased from 16
+    ax2.set_ylabel(r'$|\psi|^2$', fontsize=18, fontweight='bold')  # Increased from 16
+    ax2.set_title('(b)', fontsize=20, fontweight='bold')  # Increased from 18
     ax2.set_xticks(box_positions)
-    ax2.set_xticklabels([s for s in scenarios.values() if s in all_samples], rotation=0)
-    ax2.grid(True, alpha=0.3, linestyle='--', axis='y')
+    ax2.set_xticklabels([s for s in scenarios.values() if s in all_samples], rotation=0, fontsize=14)
+    
+    # REMOVED grid lines per reviewer comment
+    ax2.grid(False)
+    
+    # REVISED: Larger tick labels
+    ax2.tick_params(axis='both', which='major', labelsize=14)
     
     plt.tight_layout()
     plt.savefig('../figs/intensity_statistics.png', dpi=300, bbox_inches='tight')

@@ -12,19 +12,19 @@ import os
 from pathlib import Path
 
 def setup_publication_params():
-    """Set publication quality parameters"""
+    """Set publication quality parameters - REVISED for larger labels and legends"""
     plt.rcParams['font.family'] = 'sans-serif'
     plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
-    plt.rcParams['font.size'] = 12
-    plt.rcParams['axes.labelsize'] = 14
-    plt.rcParams['axes.titlesize'] = 14
-    plt.rcParams['xtick.labelsize'] = 11
-    plt.rcParams['ytick.labelsize'] = 11
-    plt.rcParams['legend.fontsize'] = 11
+    plt.rcParams['font.size'] = 14  # Increased from 12
+    plt.rcParams['axes.labelsize'] = 18  # Increased from 14
+    plt.rcParams['axes.titlesize'] = 20  # Increased from 14
+    plt.rcParams['xtick.labelsize'] = 14  # Increased from 11
+    plt.rcParams['ytick.labelsize'] = 14  # Increased from 11
+    plt.rcParams['legend.fontsize'] = 14  # Increased from 11
     plt.rcParams['figure.dpi'] = 100
     plt.rcParams['savefig.dpi'] = 300
     plt.rcParams['axes.linewidth'] = 1.0
-    plt.rcParams['text.usetex'] = False  # Set to True if LaTeX is available
+    plt.rcParams['text.usetex'] = False
 
 def create_directories():
     """Create output directories if they don't exist"""
@@ -138,9 +138,13 @@ def create_spacetime_plot(ax, data, scenario_name, vmin, vmax, energy_center=Non
     if energy_center is not None:
         ax.plot(t, energy_center, 'w--', alpha=0.5, linewidth=1.5)
     
-    ax.set_xlabel('Time $t$', fontsize=16, fontweight='bold')
-    ax.set_ylabel('Position $x$', fontsize=16, fontweight='bold')
-    ax.set_title(scenario_name, fontsize=18, fontweight='bold')
+    # REVISED: Larger axis labels
+    ax.set_xlabel('Time $t$', fontsize=18, fontweight='bold')  # Increased from 16
+    ax.set_ylabel('Position $x$', fontsize=18, fontweight='bold')  # Increased from 16
+    ax.set_title(scenario_name, fontsize=20, fontweight='bold')  # Increased from 18
+    
+    # REVISED: Larger tick labels
+    ax.tick_params(axis='both', which='major', labelsize=14)
     
     return im
 
@@ -235,7 +239,8 @@ def main():
         if data is not None:
             all_data[scenario_file] = data
             psi_squared = data['psi_abs']**2
-            vmax = np.percentile(psi_squared, 99.5)
+            # REVISED: Use tighter percentile for better dynamics visibility
+            vmax = np.percentile(psi_squared, 99)  # Changed from 99.5 to 99
             global_vmax = max(global_vmax, vmax)
     
     # Create 2x2 grid figure
@@ -257,12 +262,12 @@ def main():
                                       energy_center=energy_center)
             images.append(im)
     
-    # Add single colorbar
+    # Add single colorbar - REVISED for larger font
     fig.subplots_adjust(right=0.88)
     cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
     cbar = fig.colorbar(images[0], cax=cbar_ax)
-    cbar.set_label('$|\\psi|^2$', fontsize=14, fontweight='bold')
-    cbar.ax.tick_params(labelsize=11)
+    cbar.set_label('$|\\psi|^2$', fontsize=18, fontweight='bold')  # Increased from 14
+    cbar.ax.tick_params(labelsize=14)  # Increased from 11
     
     # Adjust layout
     plt.tight_layout(rect=[0, 0, 0.9, 1])

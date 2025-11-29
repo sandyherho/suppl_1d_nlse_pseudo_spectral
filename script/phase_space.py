@@ -14,19 +14,19 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# Set publication quality parameters
+# Set publication quality parameters - REVISED for larger labels and legends
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
-plt.rcParams['font.size'] = 12  # Increased base font size
-plt.rcParams['axes.labelsize'] = 14  # Larger labels
-plt.rcParams['axes.titlesize'] = 16  # Larger titles
-plt.rcParams['xtick.labelsize'] = 11
-plt.rcParams['ytick.labelsize'] = 11
-plt.rcParams['legend.fontsize'] = 11
+plt.rcParams['font.size'] = 14  # Increased from 12
+plt.rcParams['axes.labelsize'] = 18  # Increased from 14
+plt.rcParams['axes.titlesize'] = 20  # Increased from 16
+plt.rcParams['xtick.labelsize'] = 14  # Increased from 11
+plt.rcParams['ytick.labelsize'] = 14  # Increased from 11
+plt.rcParams['legend.fontsize'] = 14  # Increased from 11
 plt.rcParams['figure.dpi'] = 100
 plt.rcParams['savefig.dpi'] = 300
-plt.rcParams['axes.linewidth'] = 1.0  # Slightly thicker axes
-plt.rcParams['lines.linewidth'] = 2.0  # Thicker lines
+plt.rcParams['axes.linewidth'] = 1.0
+plt.rcParams['lines.linewidth'] = 2.0
 
 # Create output directories
 Path('../figs').mkdir(parents=True, exist_ok=True)
@@ -216,11 +216,10 @@ axis_limit = max_abs * 1.1
 print(f"Axis limits: ±{axis_limit:.3f}")
 
 # Create LARGER figure with 2x2 subplots
-fig, axes = plt.subplots(2, 2, figsize=(14, 14))  # Increased from 10x10 to 14x14
+fig, axes = plt.subplots(2, 2, figsize=(14, 14))
 axes = axes.flatten()
 
 # Define high-contrast colors for EPS (no transparency needed)
-# Using brighter, more vibrant colors for better visibility
 scenario_colors = ['#0066FF', '#FF3300', '#00DD00', '#FF00DD']
 scenario_list = list(scenarios.values())
 
@@ -245,7 +244,7 @@ for idx, scenario_name in enumerate(scenario_list):
         
         if len(re_filtered) > 0:
             # Reduce max points for larger point sizes to work well
-            max_points = 2000  # Reduced from 5000 since points are bigger
+            max_points = 2000
             if len(re_filtered) > max_points:
                 indices = np.random.choice(len(re_filtered), max_points, replace=False)
                 re_plot = re_filtered[indices]
@@ -254,36 +253,35 @@ for idx, scenario_name in enumerate(scenario_list):
                 re_plot = re_filtered
                 im_plot = im_filtered
             
-            # MUCH LARGER scatter plot points - increased from 0.5 to 20
-            # You can adjust this value (try 15, 20, 30, or even 50)
+            # Scatter plot with large points
             ax.scatter(re_plot, im_plot, c=scenario_colors[idx], 
-                      s=25,  # INCREASED FROM 0.5 TO 25 - ADJUST AS NEEDED
-                      alpha=0.8,  # Add slight transparency for overlapping points
+                      s=25,
+                      alpha=0.8,
                       rasterized=True, 
-                      edgecolors='darkgray',  # Add edge color for better visibility
-                      linewidths=0.5)  # Thin edge
+                      edgecolors='darkgray',
+                      linewidths=0.5)
         
-        # Set consistent axis limits and formatting
+        # Set consistent axis limits and formatting - REVISED for larger labels
         ax.set_xlim([-axis_limit, axis_limit])
         ax.set_ylim([-axis_limit, axis_limit])
-        ax.set_xlabel(r'Re$(\psi)$', fontsize=16, fontweight='bold')
-        ax.set_ylabel(r'Im$(\psi)$', fontsize=16, fontweight='bold')
+        ax.set_xlabel(r'Re$(\psi)$', fontsize=20, fontweight='bold')  # Increased from 16
+        ax.set_ylabel(r'Im$(\psi)$', fontsize=20, fontweight='bold')  # Increased from 16
         
         # Add subplot label with larger font (NO TITLE WITH SCENARIO NAME)
         ax.text(0.05, 0.95, subplot_labels[idx], transform=ax.transAxes,
-                fontsize=18, fontweight='bold', verticalalignment='top',
+                fontsize=22, fontweight='bold', verticalalignment='top',  # Increased from 18
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.8))
         
-        # Thicker grid lines for better visibility
-        ax.grid(True, linestyle='--', linewidth=0.8, alpha=0.7)
+        # REMOVED grid lines per reviewer comment
+        ax.grid(False)
         ax.set_aspect('equal', adjustable='box')
         
         # Thicker axis lines through origin
         ax.axhline(y=0, color='black', linestyle='-', linewidth=1.0, alpha=0.5)
         ax.axvline(x=0, color='black', linestyle='-', linewidth=1.0, alpha=0.5)
         
-        # Make tick labels larger and bold
-        ax.tick_params(axis='both', which='major', labelsize=12, width=1.5, length=6)
+        # Make tick labels larger
+        ax.tick_params(axis='both', which='major', labelsize=14, width=1.5, length=6)  # Increased from 12
         
         # Calculate comprehensive statistics
         stats_text.append(f"\n{subplot_labels[idx]} {scenario_name}")
